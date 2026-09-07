@@ -6,6 +6,30 @@
         <description>Signed updates for Reset on macOS.</description>
         <language>en</language>
         <item>
+            <title>1.8.1</title>
+            <pubDate>Mon, 07 Sep 2026 00:27:03 +0000</pubDate>
+            <link>https://releases.nextreset.app/releases/latest/</link>
+            <sparkle:version>1.8.1</sparkle:version>
+            <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Reset 1.8.1 stops asking for your Keychain.
+
+- **No Keychain prompt at launch, none in the background.** Reset now learns which Claude account
+  is signed in from Claude Code's own local config, and its background checks never open the
+  macOS Keychain dialog.
+- **Prompts only when you ask.** Connecting Claude Code, saving or switching an account, and turning
+  on Fast sync explain what Reset is about to read before macOS asks. Choose Always Allow and it
+  stays quiet until Claude Code renews its sign-in, which the Claude pane then reports with a
+  Reconnect button.
+- **Your choice, in Settings → Sync → Keychain prompts:** Only when I ask (default) or Never.
+
+Reset requires an Apple-silicon Mac running macOS 26 or newer. Existing installs update through
+the built-in updater.
+]]></description>
+            <enclosure url="https://releases.nextreset.app/releases/v1.8.1/Reset-v1.8.1-macOS-arm64.zip" length="3806543" type="application/octet-stream" sparkle:edSignature="4/zrj11W7kpGiMIaBJqec1IkKFArMWsVkj1dXa0Wrj5+p2afGNZImZMHk+eIjv6R+zM7da6BB/fHrpB+RWOpDA=="/>
+        </item>
+        <item>
             <title>1.8.0</title>
             <pubDate>Sun, 06 Sep 2026 19:06:10 +0000</pubDate>
             <link>https://releases.nextreset.app/releases/latest/</link>

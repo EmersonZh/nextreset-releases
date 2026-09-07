@@ -6,6 +6,33 @@
         <description>Signed updates for Reset on macOS.</description>
         <language>en</language>
         <item>
+            <title>1.9.0</title>
+            <pubDate>Mon, 07 Sep 2026 17:36:14 -0500</pubDate>
+            <link>https://releases.nextreset.app/releases/latest/</link>
+            <sparkle:version>1.9.0</sparkle:version>
+            <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Reset 1.9.0 gives every saved Codex account a home of its own.
+
+- **Saved accounts stop expiring behind your back.** A saved account used to be a copy of a sign-in
+  that also lived elsewhere, and OpenAI rotates refresh tokens, so whichever copy refreshed second
+  died. Each saved account now has its own private Codex home under Reset's Application Support
+  folder, created by its own browser sign-in, and the Codex CLI keeps its tokens fresh in place.
+  Reset never refreshes or writes tokens itself.
+- **What changes for you.** Adding or saving an account opens a separate browser sign-in for that
+  account. Accounts you already saved migrate on their next successful check. An account marked
+  "Needs sign-in" recovers with Sign in again, which now performs a fresh sign-in instead of
+  reusing the dead copy. Make current works as before: the account's file is promoted into
+  ~/.codex through the validated, rollback-safe switch.
+- The design follows CodexBar's managed accounts (MIT), credited in the third-party notices.
+
+Reset requires an Apple-silicon Mac running macOS 26 or newer. Existing installs update through
+the built-in updater.
+]]></description>
+            <enclosure url="https://releases.nextreset.app/releases/v1.9.0/Reset-v1.9.0-macOS-arm64.zip" length="3861824" type="application/octet-stream" sparkle:edSignature="mXPZLiBSphw+X26A69aSVeuDVlmKsYJ39cCca+iKLc4I3qByUdv2zwE58YX3gbKjx3Fmb8tFNtt5xLD+AN/UAg=="/>
+        </item>
+        <item>
             <title>1.8.3</title>
             <pubDate>Mon, 07 Sep 2026 15:42:39 +0000</pubDate>
             <link>https://releases.nextreset.app/releases/latest/</link>

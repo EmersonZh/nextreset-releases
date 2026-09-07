@@ -6,6 +6,27 @@
         <description>Signed updates for Reset on macOS.</description>
         <language>en</language>
         <item>
+            <title>1.8.2</title>
+            <pubDate>Mon, 07 Sep 2026 01:54:25 +0000</pubDate>
+            <link>https://releases.nextreset.app/releases/latest/</link>
+            <sparkle:version>1.8.2</sparkle:version>
+            <sparkle:shortVersionString>1.8.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Reset 1.8.2 closes the last gap in the Keychain work.
+
+- **No Keychain dialog at launch, for real this time.** 1.8.1 marked its background Keychain
+  queries as non-interactive with the modern API, which macOS's login keychain ignores, so the
+  "Reset wants to use your confidential information" dialog could still appear at launch. Every
+  Keychain call now runs behind the switch that keychain actually honours: off for launch and
+  background work, on only while an explained, user-initiated read is running.
+
+Reset requires an Apple-silicon Mac running macOS 26 or newer. Existing installs update through
+the built-in updater.
+]]></description>
+            <enclosure url="https://releases.nextreset.app/releases/v1.8.2/Reset-v1.8.2-macOS-arm64.zip" length="3807440" type="application/octet-stream" sparkle:edSignature="ViGOeI+xPPkIS9dbPzUGEQY4qniBN2mb+61Y7pKHS7k2P2ruPfFhQEV/lW5oPp/kdvXuhgCYmnrJBScWDpRGCg=="/>
+        </item>
+        <item>
             <title>1.8.1</title>
             <pubDate>Mon, 07 Sep 2026 00:27:03 +0000</pubDate>
             <link>https://releases.nextreset.app/releases/latest/</link>

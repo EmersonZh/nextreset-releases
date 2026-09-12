@@ -6,6 +6,24 @@
         <description>Signed updates for Reset on macOS.</description>
         <language>en</language>
         <item>
+            <title>1.9.1</title>
+            <pubDate>Sat, 12 Sep 2026 09:16:54 -0500</pubDate>
+            <link>https://releases.nextreset.app/releases/latest/</link>
+            <sparkle:version>1.9.1</sparkle:version>
+            <sparkle:shortVersionString>1.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Reset 1.9.1 fixes an unexpected quit during usage refreshes.
+
+- Reset stays open when a newly reported Codex quota cycle is ahead of the display clock.
+- Work usage safely handles future date selections and periods outside retained history.
+  Other accounts' valid work remains visible.
+
+Reset requires an Apple-silicon Mac running macOS 26 or newer.
+]]></description>
+            <enclosure url="https://releases.nextreset.app/releases/v1.9.1/Reset-v1.9.1-macOS-arm64.zip" length="3861975" type="application/octet-stream" sparkle:edSignature="C1GgdhV1UGJbc5HGLZmu0cu81FrveqW+N6hFoQeXQFFyZdq3TJwQz7u1gpUca82EOVnt8RtSJPVVCXpL2HZmAQ=="/>
+        </item>
+        <item>
             <title>1.9.0</title>
             <pubDate>Mon, 07 Sep 2026 17:36:14 -0500</pubDate>
             <link>https://releases.nextreset.app/releases/latest/</link>
